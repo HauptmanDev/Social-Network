@@ -1,0 +1,14 @@
+.music {
+    background-color: white;
+}
+
+.music {
+    display: grid;
+    /*grid-template-areas: "n m";*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-gap: 5px;*/
+}
+
+
+
+

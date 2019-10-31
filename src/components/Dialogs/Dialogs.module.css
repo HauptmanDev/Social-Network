@@ -1,0 +1,23 @@
+.dialogs {
+    display: grid;
+    background-color: white;
+    grid-template-columns: 2fr 10fr;
+    grid-gap: 5px;
+}
+
+.diologItems {
+    padding: 10px;
+}
+.diologItems .active {
+color: lightpink;
+}
+
+.messages {
+    padding: 5px;
+}
+
+.messages .message {
+
+}
+
+

@@ -1,0 +1,14 @@
+.settings {
+    background-color: white;
+}
+
+.settings {
+    display: grid;
+    /*grid-template-areas: "n m";*/
+    /*grid-template-columns: 1fr 1fr;*/
+    /*grid-gap: 5px;*/
+}
+
+
+
+

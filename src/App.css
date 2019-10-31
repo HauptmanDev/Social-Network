@@ -1,0 +1,15 @@
+.app-wrapper {
+    display: grid;
+    height: 95vh;
+    width: 98vw;
+    margin: auto auto;
+    grid-template-areas: "h h h" "n v t" "f f f";
+    grid-template-rows: 50px 1fr 50px;
+    grid-template-columns: 150px 1fr 50px;
+    grid-gap: 5px;
+}
+
+.app-wrapper-content {
+    grid-area: v;
+    background-color: white;
+}
