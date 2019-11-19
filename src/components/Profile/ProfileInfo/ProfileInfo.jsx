@@ -4,21 +4,16 @@ import Preloader from "../../common/Preloader/Preloader";
 import ProfileStatus from "./ProfileStatus";
 import ProfileStatusWithHooks from "./ProfileStatusWithHooks";
 
-const ProfileInfo = (props) => {
-    if (!props.profile) {
+const ProfileInfo = ({profile,status,updateStatus}) => {
+    if (!profile) {
         return <Preloader/>
     }
 
     return (
         <div>
-            {/*<div className={s.picture}>*/}
-            {/*<img*/}
-            {/*src='http://www.gumus-group.com/Assets/uploads/1700x300-glass-building.jpg?t=Fri%20Aug%2010%202018%2013:45:24%20GMT+0300%20(GMT+03:00)'/>*/}
-            {/*</div>*/}
             <div className={s.descriptionBlock}>
-                <img src={props.profile.photos.large}/>
-                <ProfileStatusWithHooks status={props.status} updateStatus={props.updateStatus}/>
-                {/*<ProfileStatus status={props.status} updateStatus={props.updateStatus}/>*/}
+                <img src={profile.photos.large}/>
+                <ProfileStatusWithHooks status={status} updateStatus={updateStatus}/>
             </div>
         </div>)
 };
