@@ -1,13 +1,9 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8842945b-2e58-4865-b424-4b457b6f13c9" name="Default" comment="Refactoring code. Added new components.">
-      <change beforePath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/inspectionProfiles/Project_Default.xml" afterDir="false" />
+    <list default="true" id="8842945b-2e58-4865-b424-4b457b6f13c9" name="Default" comment="Refactoring code. Added test components.">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/redux/redux-store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/redux-store.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +40,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/Profile/ProfileInfo" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../react-portfolio" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -58,19 +54,19 @@
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Users" />
-      <recent name="Q:\IT-kam\my projects\Messenger\src\components\common\Paginator" />
-      <recent name="Q:\IT-kam\my projects\Messenger\src\redux" />
-      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Profile\ProfileInfo" />
-      <recent name="Q:\IT-kam\my projects\Messanger\src\components\common\FormsControls" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Q:\IT-kam\my projects\Messenger\src\components\common\Paginator" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Tools" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Profile" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Nav" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Profile\ProfileInfo" />
+      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Users" />
+      <recent name="Q:\IT-kam\my projects\Messenger\src\components\common\Paginator" />
+      <recent name="Q:\IT-kam\my projects\Messenger\src\redux" />
+      <recent name="Q:\IT-kam\my projects\Messanger\src\components\common\FormsControls" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -309,7 +305,7 @@
       <workItem from="1574107724471" duration="180000" />
       <workItem from="1574138568597" duration="5793000" />
       <workItem from="1574267687760" duration="6177000" />
-      <workItem from="1574346052096" duration="1550000" />
+      <workItem from="1574346052096" duration="8443000" />
     </task>
     <task id="LOCAL-00001" summary="Component Editing">
       <created>1573831890950</created>
@@ -332,7 +328,14 @@
       <option name="project" value="LOCAL" />
       <updated>1574194190566</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Refactoring code. Added test components.">
+      <created>1574347833082</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1574347833083</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="TodoView">
@@ -364,7 +367,8 @@
     <MESSAGE value="Component Editing" />
     <MESSAGE value="Refactoring code." />
     <MESSAGE value="Refactoring code. Added new components." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code. Added new components." />
+    <MESSAGE value="Refactoring code. Added test components." />
+    <option name="LAST_COMMIT_MESSAGE" value="Refactoring code. Added test components." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
