@@ -1,6 +1,5 @@
 import React from 'react';
 import s from './Footer.module.css'
-import PropTypes from 'prop-types';
 
 const Footer = () => {
     return <footer className={s.footer}>
