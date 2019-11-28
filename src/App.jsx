@@ -63,7 +63,7 @@ let AppContainer = compose(
     withRouter, connect(mapStateToProps, {initializeApp}))(App);
 const SocJSApp = (props) => {
     return <BrowserRouter>
-        <Provider store={store}>
+        <Provider store={store} basename={process.env.PUBLIC_URL}>
             < AppContainer/>
         </Provider>
     </BrowserRouter>
