@@ -4,6 +4,7 @@ const ADD_POST = 'ADD-POST';
 const SET_USER_PROFILE = 'SET_USER-PROFILE';
 const SET_STATUS = 'SET-STATUS';
 const DELETE_POST = 'DELETE-POST';
+const CHANGE_AVATAR = 'CHANGE-AVATAR';
 
 let initialState = {
     posts: [
@@ -30,16 +31,17 @@ const profileReducer = (state = initialState, action) => {
             return {...state, status: action.status};
         }
         case DELETE_POST: {
-
             return {
                 ...state, posts: state.posts.filter(p => {
-                    // p.id != action.postId
+                    // p.id != action.postId // почему ошибка??
                 })
             };
         }
+        case CHANGE_AVATAR: {
+            return {...state, profile: {...state.profile, photos: action.photos}};
+        }
         default:
             return state;
-
     }
 };
 export const addPostActionCreator = (newPostText) => {
@@ -62,6 +64,13 @@ export const deletePost = (postId) => {
         type: DELETE_POST, postId
     }
 };
+export const changeAvatar = (photos) => {
+    return {
+        type: CHANGE_AVATAR, photos
+    }
+};
+
+
 export const getUserProfile = (userId) => async (dispatch) => {
     let response = await usersAPI.getProfile(userId);
     dispatch(setUserProfile(response.data));
@@ -72,9 +81,16 @@ export const getStatus = (userId) => async (dispatch) => {
     dispatch(setStatus(response.data));
 };
 export const updateStatus = (status) => async (dispatch) => {
-    let response = await profileAPI.updateStatus(status)
+    let response = await profileAPI.updateStatus(status);
     if (response.data.resultCode === 0) {
         dispatch(setStatus(status))
     }
 };
+export const savePhoto = (file) => async (dispatch) => {
+    let response = await profileAPI.savePhoto(file);
+    if (response.data.resultCode === 0) {
+        dispatch(changeAvatar(response.data.data.photos))
+    }
+};
+
 export default profileReducer;

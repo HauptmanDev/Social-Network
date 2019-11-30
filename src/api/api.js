@@ -1,12 +1,10 @@
 import * as axios from "axios";
 
-
 const instance = axios.create({
     withCredentials: true,
     baseURL: 'https://social-network.samuraijs.com/api/1.0/',
     headers: {
         "API-KEY": "9ae69435-2b9a-40bc-b874-7a6c240dae36"
-        // "API-KEY": "f6e2860d-1291-43ec-8245-d627ef75db33" ок, вроде должно работать
     }
 });
 
@@ -37,6 +35,15 @@ export const profileAPI = {
     },
     updateStatus(status) {
         return instance.put(`profile/status`, {status: status})
+    },
+    savePhoto(photoFile) {
+        const formData = new FormData();
+        formData.append('image', photoFile);
+        return instance.put(`profile/photo`, formData, {
+            headers: {
+                'Content-Type': 'multipart/form-data'
+            }
+        })
     }
 };
 export const authAPI = {
