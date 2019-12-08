@@ -34,7 +34,7 @@ const profileReducer = (state = initialState, action) => {
         case DELETE_POST: {
             return {
                 ...state, posts: state.posts.filter(p => {
-                    // p.id != action.postId // почему ошибка??
+                    return p.id != action.postId
                 })
             };
         }
@@ -93,7 +93,6 @@ export const savePhoto = (file) => async (dispatch) => {
     }
 };
 export const saveProfile = (profile) => async (dispatch, getState) => {
-    debugger
     let userId = getState().auth.userId;
     let response = await profileAPI.saveProfile(profile);
     if (response.data.resultCode === 0) {

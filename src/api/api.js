@@ -63,6 +63,22 @@ export const authAPI = {
     }
 };
 
+let errorAuth;
+
+instance.interceptors.response.use(
+    response => response,
+    error => {
+        if (error.response.status === 401) {
+            errorAuth()
+        }
+        return Promise.reject(error)
+    }
+);
+
+export const setHandler = (callback) => {
+    errorAuth = callback;
+};
+
 export const securityAPI = {
     getCaptchaUrl() {
         return instance.get(`security/get-captcha-url`)

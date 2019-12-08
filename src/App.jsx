@@ -12,6 +12,8 @@ import Preloader from "./components/common/Preloader/Preloader";
 import store from "./redux/redux-store";
 import {Provider} from "react-redux";
 import {withSuspense} from "./components/hoc/withSuspense";
+import {logout} from "./redux/auth-reducer";
+import {setHandler} from "./api/api";
 
 
 const ProfileContainer = React.lazy(() => import('./components/Profile/ProfileContainer'));
@@ -22,7 +24,7 @@ const LoginPage = React.lazy(() => import('./components/Login/Login'));
 
 class App extends React.Component {
     catchAllUnhandledErrors = (reasone, promise) => {
-    // добавить санку на глобальные ошибки
+        // добавить санку на глобальные ошибки
     };
 
     componentDidMount() {
@@ -47,14 +49,14 @@ class App extends React.Component {
                     <Footer/>
                     <div className='app-wrapper-content'>
                         <Switch>
-                        <Route exact path='/' render={() => <Redirect to={'/profile'}/>}/>
-                        <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
-                        <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)}/>
-                        <Route path='/users' render={withSuspense(UsersContainer)}/>
-                        <Route path='/login' render={withSuspense(LoginPage)}/>
-                        <Route exact path='*' render={() => {
-                            return <div>404 NOT FOUND</div>
-                        }}/>
+                            <Route exact path='/' render={() => <Redirect to={'/profile'}/>}/>
+                            <Route path='/dialogs' render={withSuspense(DialogsContainer)}/>
+                            <Route path='/profile/:userId?' render={withSuspense(ProfileContainer)}/>
+                            <Route path='/users' render={withSuspense(UsersContainer)}/>
+                            <Route path='/login' render={withSuspense(LoginPage)}/>
+                            <Route exact path='*' render={() => {
+                                return <div>404 NOT FOUND</div>
+                            }}/>
                         </Switch>
                     </div>
                 </div>
@@ -66,11 +68,18 @@ class App extends React.Component {
 const mapStateToProps = (state) => ({initialized: state.app.initialized});
 let AppContainer = compose(withRouter, connect(mapStateToProps, {initializeApp}))(App);
 const SocJSApp = (props) => {
+
     return <BrowserRouter>
         <Provider store={store}>
             < AppContainer/>
         </Provider>
     </BrowserRouter>
 };
+
+const errorAuth = () => {
+    store.dispatch(logout())
+};
+
+setHandler(errorAuth);
 
 export default SocJSApp;
