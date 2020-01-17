@@ -1,18 +1,8 @@
 const SEND_MESSAGE = 'SEND-MESSAGE';
 
 let initialState = {
-    dialogs: [
-        {id: 1, name: 'Kirill'},
-        {id: 2, name: 'Igor'},
-        {id: 3, name: 'Victor'},
-        {id: 4, name: 'Python'}
-    ],
-    messages: [
-        {id: 1, message: 'Give me my money'},
-        {id: 2, message: 'How are you?'},
-        {id: 3, message: 'May be Borba'},
-        {id: 4, message: 'Guuusss???'}
-    ],
+    dialogs: [],
+    messages: [],
 };
 const dialogsReducer = (state = initialState, action) => {
     switch (action.type) {

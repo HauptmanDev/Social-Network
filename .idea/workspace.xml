@@ -1,14 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8842945b-2e58-4865-b424-4b457b6f13c9" name="Default" comment="Refactoring Paginator.">
+    <list default="true" id="8842945b-2e58-4865-b424-4b457b6f13c9" name="Default" comment="Improvement Login component.">
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/DialogsContainer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Footer/Footer.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Nav/Nav.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/components/Users/Users.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Users/Users.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/utils/validators/validators.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/utils/validators/validators.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/api/api.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/api/api.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Dialogs/Dialogs.module.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/dialogs-reducer.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/redux/store.js" beforeDir="false" afterPath="$PROJECT_DIR$/src/redux/store.js" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -45,7 +45,7 @@
     <property name="com.intellij.ide.scratch.LRUPopupBuilder$1/New Scratch File" value="HTML" />
     <property name="js.last.introduce.type" value="CONST" />
     <property name="jsx.switch.disabled" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/components/hoc" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="list.type.of.created.stylesheet" value="CSS" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.standard" value="true" />
@@ -57,21 +57,22 @@
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.lookFeel" />
+    <property name="ts.external.directory.path" value="C:\Program Files\JetBrains\WebStorm 2019.2.4\plugins\JavaScriptLanguage\jsLanguageServicesImpl\external" />
   </component>
   <component name="RecentsManager">
-    <key name="CopyFile.RECENT_KEYS">
-      <recent name="Q:\IT-kam\my projects\Messenger\src\components\hoc" />
-      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Profile\ProfileInfo" />
-      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Users" />
-      <recent name="Q:\IT-kam\my projects\Messenger\src\components\common\Paginator" />
-      <recent name="Q:\IT-kam\my projects\Messenger\src\redux" />
-    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="Q:\IT-kam\my projects\Messenger\src\components\common\Paginator" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Tools" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Profile" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Nav" />
       <recent name="Q:\IT-kam\my projects\Messanger\src\components\Header" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="Q:\IT-kam\socnet\Social-Network\src\components\Profile\ProfileInfo" />
+      <recent name="Q:\IT-kam\my projects\Messenger\src\components\hoc" />
+      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Profile\ProfileInfo" />
+      <recent name="Q:\IT-kam\my projects\Messenger\src\components\Users" />
+      <recent name="Q:\IT-kam\my projects\Messenger\src\components\common\Paginator" />
     </key>
   </component>
   <component name="RunDashboard">
@@ -113,19 +114,6 @@
       </test-names>
       <method v="2" />
     </configuration>
-    <configuration name="message of new post should be It-kama" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
-      <node-interpreter value="project" />
-      <node-options value="" />
-      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
-      <working-dir value="$PROJECT_DIR$" />
-      <envs />
-      <scope-kind value="TEST" />
-      <test-file value="$PROJECT_DIR$/src/redux/profile-reducer.test.js" />
-      <test-names>
-        <test-name value="message of new post should be It-kama" />
-      </test-names>
-      <method v="2" />
-    </configuration>
     <configuration name="message of new post should be Пока, всем" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -152,20 +140,30 @@
       </test-names>
       <method v="2" />
     </configuration>
+    <configuration name="deploy" type="js.build_tools.npm" temporary="true" nameIsGenerated="true">
+      <package-json value="$PROJECT_DIR$/package.json" />
+      <command value="run" />
+      <scripts>
+        <script value="deploy" />
+      </scripts>
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
     <list>
       <item itemvalue="Jest.renders without crashing" />
-      <item itemvalue="Jest.message of new post should be It-kama" />
       <item itemvalue="Jest.length of post should be incremented" />
       <item itemvalue="Jest.message of new post should be Пока, всем" />
       <item itemvalue="Jest.after deleting length of messages should be decrement" />
+      <item itemvalue="npm.deploy" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="npm.deploy" />
         <item itemvalue="Jest.renders without crashing" />
         <item itemvalue="Jest.after deleting length of messages should be decrement" />
         <item itemvalue="Jest.length of post should be incremented" />
         <item itemvalue="Jest.message of new post should be Пока, всем" />
-        <item itemvalue="Jest.message of new post should be It-kama" />
       </list>
     </recent_temporary>
   </component>
@@ -315,6 +313,40 @@
       <workItem from="1574528506325" duration="619000" />
       <workItem from="1574703245801" duration="621000" />
       <workItem from="1574790000725" duration="4118000" />
+      <workItem from="1575045868635" duration="3848000" />
+      <workItem from="1575063773156" duration="961000" />
+      <workItem from="1575135043704" duration="7652000" />
+      <workItem from="1575181417911" duration="9479000" />
+      <workItem from="1575299806762" duration="10836000" />
+      <workItem from="1575387844420" duration="9931000" />
+      <workItem from="1575480710369" duration="4103000" />
+      <workItem from="1575553993180" duration="2001000" />
+      <workItem from="1575712661617" duration="21000" />
+      <workItem from="1575723647898" duration="10182000" />
+      <workItem from="1575801478089" duration="2822000" />
+      <workItem from="1575916498605" duration="138000" />
+      <workItem from="1575999980460" duration="2078000" />
+      <workItem from="1576086775309" duration="620000" />
+      <workItem from="1576090302629" duration="716000" />
+      <workItem from="1576091105882" duration="15000" />
+      <workItem from="1576254686171" duration="2205000" />
+      <workItem from="1576260425891" duration="526000" />
+      <workItem from="1576261439749" duration="608000" />
+      <workItem from="1576420650105" duration="1612000" />
+      <workItem from="1576594172018" duration="157000" />
+      <workItem from="1576693185227" duration="2072000" />
+      <workItem from="1576772286023" duration="39000" />
+      <workItem from="1577469115862" duration="1281000" />
+      <workItem from="1577617851014" duration="1197000" />
+      <workItem from="1577700306254" duration="2758000" />
+      <workItem from="1577957625067" duration="22000" />
+      <workItem from="1577958324583" duration="609000" />
+      <workItem from="1578062750393" duration="115000" />
+      <workItem from="1578158446108" duration="1408000" />
+      <workItem from="1578674576520" duration="472000" />
+      <workItem from="1579271744909" duration="98000" />
+      <workItem from="1579271852267" duration="63000" />
+      <workItem from="1579271928687" duration="127000" />
     </task>
     <task id="LOCAL-00001" summary="Component Editing">
       <created>1573831890950</created>
@@ -351,7 +383,56 @@
       <option name="project" value="LOCAL" />
       <updated>1574364250916</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Refactoring Paginator.">
+      <created>1575045963718</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1575045963718</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Fixed app.">
+      <created>1575046182233</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575046182233</updated>
+    </task>
+    <task id="LOCAL-00008" summary="Fixed app. Added method 'Change Avatar'.">
+      <created>1575144888645</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1575144888645</updated>
+    </task>
+    <task id="LOCAL-00009" summary="Work with Profile page. Added ProfileDataForm.">
+      <created>1575387935967</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575387935967</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Improvement Login component.">
+      <created>1575402975559</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1575402975559</updated>
+    </task>
+    <task id="LOCAL-00011" summary="Fixed app.">
+      <created>1575577991691</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1575577991691</updated>
+    </task>
+    <task id="LOCAL-00012" summary="Change auth-reducer.">
+      <created>1575801546555</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1575801546555</updated>
+    </task>
+    <option name="localTasksCounter" value="13" />
     <servers />
   </component>
   <component name="TodoView">
@@ -385,7 +466,12 @@
     <MESSAGE value="Refactoring code. Added new components." />
     <MESSAGE value="Refactoring code. Added test components." />
     <MESSAGE value="Refactoring Paginator." />
-    <option name="LAST_COMMIT_MESSAGE" value="Refactoring Paginator." />
+    <MESSAGE value="Fixed app. Added method 'Change Avatar'." />
+    <MESSAGE value="Work with Profile page. Added ProfileDataForm." />
+    <MESSAGE value="Improvement Login component." />
+    <MESSAGE value="Fixed app." />
+    <MESSAGE value="Change auth-reducer." />
+    <option name="LAST_COMMIT_MESSAGE" value="Change auth-reducer." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

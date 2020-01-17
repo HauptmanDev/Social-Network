@@ -1,23 +1,10 @@
 .dialogs {
-    display: grid;
+    display: flex;
     background-color: white;
-    grid-template-columns: 2fr 10fr;
-    grid-gap: 5px;
+    flex-direction: row;
+    height: 100vh;
+    border: 1px solid black;
 }
 
-.diologItems {
-    padding: 10px;
-}
-.diologItems .active {
-color: lightpink;
-}
-
-.messages {
-    padding: 5px;
-}
-
-.messages .message {
-
-}
 
 

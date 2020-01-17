@@ -4,6 +4,7 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {Redirect} from "react-router-dom";
 import AddMessageForm from "./AddMessageForm/AddMessageForm";
+import {dialogsAPI} from "../../api/api";
 
 const Dialogs = (props) => {
     let state = props.dialogsPage;
@@ -22,15 +23,21 @@ const Dialogs = (props) => {
     );
 
     return (
-        <div className={s.diologs}>
-            <div className={s.diologsItems}>
-                {dialogsElements}
+        <div className={s.dialogs}>
+            <div>
+                <div className={s.dialogsItems}>
+                    {dialogsElements}
+                </div>
             </div>
-            <div className={s.messages}>
-                {messagesElements}
+            <div className={s.chat}>
+                <div className={s.messages}>
+                    {messagesElements}
+                </div>
+                <button onClick={()=>{dialogsAPI._sendMessage()}}>Send</button>
+                <AddMessageForm onSubmit={addNewMessage}/>
             </div>
-            <AddMessageForm onSubmit={addNewMessage}/>
         </div>
+
     )
 };
 
