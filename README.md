@@ -1,6 +1,6 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-Ссылка на социальную сеть (на стадии разработки)  [Incubator social network](https://hauptmandev.github.io/Social-Network/)
+Ссылка на социальную сеть (на стадии разработки)  [Incubator social-network](https://hauptmandev.github.io/Social-Network/)
 
 
 ## Available Scripts
