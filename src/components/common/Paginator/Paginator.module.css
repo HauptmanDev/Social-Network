@@ -1,3 +1,9 @@
+.modulePaginator {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
 .selectedPage {
     font-weight: bold;
 }
@@ -5,8 +11,8 @@
 .paginator {
     margin: 10px;
 }
+
 .pageNumber {
-    padding: 2px;
     border: 1px solid darkblue;
 }
 

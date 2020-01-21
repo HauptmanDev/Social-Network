@@ -18,7 +18,7 @@ let Paginator = ({currentPage, onPageChanged, totalItemsCount, pageSize, portion
     const clickRight = () => {
         setPortionNumber(portionNumber + 1)
     };
-    return <div>
+    return <div className={s.modulePaginator}>
         {portionNumber > 1 && <button onClick={clickLeft}>L</button>}
         {pages
             .filter(p => p >= leftPortionPageNumber && p <= rightPortionPageNumber)
